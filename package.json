@@ -1,0 +1,32 @@
+{
+  "name": "awesome-os",
+  "version": "1.0.0",
+  "description": "Landing page for Awesome OS INC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawfreed/awesome-os.git"
+  },
+  "author": "M. Lawfreed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawfreed/awesome-os/issues"
+  },
+  "homepage": "https://github.com/lawfreed/awesome-os#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-run": "^1.7.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "pump": "^3.0.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^2.1.4"
+  }
+}
