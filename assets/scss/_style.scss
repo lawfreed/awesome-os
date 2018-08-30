@@ -1,0 +1,93 @@
+body {
+    background-color: $backgroundColour;
+}
+/**  Video player **/
+.wrapper {
+    left: 40%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        background-image: linear-gradient(
+            rgba(240,86,35, .9), 
+            rgba(168,25,22, .5)
+        );
+    }
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+.row {
+    margin: 0;
+}
+.col {
+    padding: 0;
+}
+.navbar {
+    padding: 8px 0;
+}
+.btn-lg {
+    width: 400px;
+    min-width: 264px;
+    padding: 32px 0 ;
+    border-radius: 100px;
+    border-style: none;
+}
+.headerGroup {
+    margin-top: 45%;
+}
+.buttonGroup {
+    width: 1000px;
+    position: absolute;
+    margin: 5em 0;
+    .btn-primary {
+        background: linear-gradient(-217deg, #FF7343 0%, #FF3554 97%, #FF3554 97%, #f35 100%);
+        &:hover {
+            background: $backgroundColour;
+            color: $subtextColour;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); 
+            -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); 
+            -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .btn-secondary {
+        position: relative;
+        left: 50px;
+        background: $backgroundColour;
+        color: $subtextColour;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); 
+        -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); 
+        -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+        &:hover {
+            color: $backgroundColour;
+            background: linear-gradient(-217deg, #FF7343 0%, #FF3554 97%, #FF3554 97%, #f35 100%);
+        }
+    }
+}
+.container {
+    margin: 0 auto;
+    max-width: 90%;
+    h1 {
+        font-weight: 400;
+        font-size: 4em;
+        color: orangered;
+    }
+    h5 {
+        margin: 0;
+        font-weight: 100;
+    }
+    h5, aside {
+        font-size: 1.1em;
+        color: $subtextColour;
+    }
+}
