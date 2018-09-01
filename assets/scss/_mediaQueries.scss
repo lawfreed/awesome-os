@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1440px) {
+    .container {
+        .headerGroup {
+            margin-top: 30%;
+        }
+        h1 {
+            font-size: 3.3em;
+        }
+        h5, aside {
+            font-size: 1em;
+            color: $subtextColour;
+        }
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .buttonGroup {
+        .btn-primary {
+            width: 270px;
+            // min-width: $buttonMinWidth;
+        }
+        .btn-secondary {
+            width: 270px;
+            // min-width: $buttonMinWidth;
+        }
+    }
+    .container {
+        .headerGroup {
+            margin-top: 30%;
+        }
+        h1 {
+            font-size: 3.3em;
+        }
+        h5, aside {
+            font-size: 1em;
+            color: $subtextColour;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .buttonGroup {
+        .btn-primary {
+            width: 200px;
+            // min-width: $buttonMinWidth;
+        }
+        .btn-secondary {
+            width: 200px;
+            // min-width: $buttonMinWidth;
+        }
+    }
+    .container {
+        .headerGroup {
+            margin-top: 30%;
+        }
+        h1 {
+            font-size: 2.7em;
+        }
+        h5, aside {
+            font-size: .8em;
+            color: $subtextColour;
+        }
+    }
+}

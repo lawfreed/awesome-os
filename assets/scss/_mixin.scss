@@ -1,0 +1,29 @@
+// Parent mixin
+@mixin boxShadow {
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);       
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+// Children mixin
+@mixin buttonDefault {
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: $imageLinearGradient;
+    &:hover {
+        background-position: right center; /* change the direction of the change here */
+       @include boxShadow();
+    }
+}
+@mixin buttonHover {
+    background-position: right center; /* change the direction of the change here */
+    background: $backgroundColour;
+    color: $subtextColour;
+    @include boxShadow;
+    &:hover {
+        transition: 0.5s;
+        color: $backgroundColour;
+        background-image: $imageLinearGradient;
+        background-size: 200% auto;
+    }
+}
