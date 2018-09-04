@@ -1,7 +1,10 @@
 body {
+    font-family: 'MyriadPro', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
     background-color: $backgroundColour;
 }
-/**  Video player **/
+/**  Start video player **/
 .wrapper {
     top: 0%;
     left: 40%;
@@ -36,8 +39,7 @@ body {
         background-image: linear-gradient(
             rgba(240,86,35, .9), 
             rgba(168,25,22, .9)
-        );
-        /** End add background colour gradient **/
+        );/** End add background colour gradient **/
         button {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -53,8 +55,9 @@ body {
             height: 150px;
         }
         .ytp-play-button {
+            transition: 0.5s;
             fill: $backgroundColour;
-            opacity: 0.7;
+            opacity: 0;
          }
          
          .ytp-play-button:hover {
@@ -67,8 +70,7 @@ body {
         min-height: 100%;
         position: absolute;
         z-index: 1;
-    }
-    
+    }/** End video player **/    
 }
 .row {
     margin: 0;
@@ -82,18 +84,17 @@ body {
     border-style: none;
     line-height: 22px;
     font-size: $buttonFontSize;
+    width: $buttonWidth;
 }
 .buttonGroup {
     margin: 5% 0;
     .btn-primary {
         border-color: transparent;
-        background: transparent;
-        width: $buttonWidth;
+        background: transparent;    
         @include boxShadow;
         @include buttonDefault;
     }
     .btn-secondary {
-        width: $buttonWidth;
         @include buttonHover;
         margin-left: 2em;
     }
@@ -112,8 +113,9 @@ body {
     }
     a {
         opacity: .5;
+        font-family: 'MyriadPro-Bold';
         font-size: 1.8em;
-        font-weight: 700;
+        font-weight: bold;
         padding-right: 0;
         padding-left: 2em;
         color: white;
@@ -123,16 +125,16 @@ body {
         }
     }
     h1 {
-        font-weight: 400;
+        font-family: 'AvenirLtStd-Roman', Arial, Helvetica, sans-serif;
+        font-weight: 500;
         font-size: 4em;
         color: orangered;
     }
     h5 {
         margin: 0;
-        font-weight: 100;
     }
     h5, aside {
-        font-size: 1.1em;
+        font-size: 1em;
         color: $subtextColour;
     }
     .col-lg-7 {
