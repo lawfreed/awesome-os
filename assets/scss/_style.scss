@@ -39,7 +39,8 @@ body {
         background-image: linear-gradient(
             rgba(240,86,35, .9), 
             rgba(168,25,22, .9)
-        );/** End add background colour gradient **/
+        );
+        /** End add background colour gradient **/
         button {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -56,6 +57,7 @@ body {
         }
         .ytp-play-button {
             transition: 0.5s;
+            // fill: orangered;
             fill: $backgroundColour;
             opacity: 0;
          }
@@ -92,7 +94,7 @@ body {
         border-color: transparent;
         background: transparent;    
         @include boxShadow;
-        @include buttonDefault;
+        @include buttonHoverReverse;
     }
     .btn-secondary {
         @include buttonHover;
@@ -126,7 +128,6 @@ body {
     }
     h1 {
         font-family: 'AvenirLtStd-Roman', Arial, Helvetica, sans-serif;
-        font-weight: 500;
         font-size: 4em;
         color: orangered;
     }

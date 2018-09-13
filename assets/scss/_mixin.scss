@@ -16,14 +16,27 @@
     }
 }
 @mixin buttonHover {
-    background-position: right center; /* change the direction of the change here */
+    // background-position: right center; /* change the direction of the change here */
     background: $backgroundColour;
     color: $subtextColour;
     @include boxShadow;
     &:hover {
+        background-position: right center;
         transition: 0.5s;
         color: $backgroundColour;
         background-image: $imageLinearGradient;
+        background-size: 200% auto;
+    }
+}
+@mixin buttonHoverReverse {
+    background-position: right center; /* change the direction of the change here */
+    background: $imageLinearGradient;
+    color: white;
+    @include boxShadow;
+    &:hover {
+        transition: 0.5s;
+        color: $subtextColour;
+        background: $backgroundColour;
         background-size: 200% auto;
     }
 }

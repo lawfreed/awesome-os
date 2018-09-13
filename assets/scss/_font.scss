@@ -36,7 +36,7 @@
 @font-face {
 	font-family: 'AvenirLtStd-Black';
 	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-Black.otf') format("opentype");
-	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-Black.eot?#iefix') format("opentype");
+	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-Black.otf?#iefix') format("opentype");
 	font-weight: black;
 	font-style: normal;
 }
@@ -83,8 +83,8 @@
 
 @font-face {
 	font-family: 'AvenirLtStd-Light';
-	src: url('/assets/fonts/avenir-lt-std/MAvenirLTStd-Light.otf') format("opentype");
-	src: url('/assets/fonts/avenir-lt-std/MAvenirLTStd-Light.otf?#iefix') format("opentype");
+	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-Light.otf') format("opentype");
+	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-Light.otf?#iefix') format("opentype");
 	font-weight: 100;
 	font-style: normal;
 }
@@ -99,8 +99,8 @@
 
 @font-face {
 	font-family: 'AvenirLtStd-Medium';
-	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-LightOblique.otf') format("opentype");;
-	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-LightOblique.otf?#iefix') format("opentype");;
+	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-Medium.otf') format("opentype");;
+	src: url('/assets/fonts/avenir-lt-std/AvenirLTStd-Medium.otf?#iefix') format("opentype");;
 	font-weight: 300;
 	font-style: normal;
 }
