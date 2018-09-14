@@ -132,6 +132,7 @@ var videoPlayerCommand = exports.videoPlayerCommand = function videoPlayerComman
         "from": flip ? pause : play,
         "to": flip ? play : pause
       }).get(0).beginElement();
+      playPromise;
     }).catch(function (error) {
       // Auto-play was prevented
       // Show paused UI.

@@ -15,6 +15,7 @@ export const videoPlayerCommand = () => {
         "from": flip ? pause : play,
         "to": flip ? play : pause
       }).get(0).beginElement();
+      playPromise;
     }).catch(error => {
       // Auto-play was prevented
       // Show paused UI.
