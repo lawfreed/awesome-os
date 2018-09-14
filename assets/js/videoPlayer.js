@@ -18,8 +18,7 @@ export const videoPlayerCommand = () => {
     }).catch(error => {
       // Auto-play was prevented
       // Show paused UI.
+      video.pause();
     });
-  } else {
-    video.pause();
   }
 }

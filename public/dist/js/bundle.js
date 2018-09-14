@@ -135,9 +135,8 @@ var videoPlayerCommand = exports.videoPlayerCommand = function videoPlayerComman
     }).catch(function (error) {
       // Auto-play was prevented
       // Show paused UI.
+      video.pause();
     });
-  } else {
-    video.pause();
   }
 };
 
