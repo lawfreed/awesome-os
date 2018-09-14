@@ -124,19 +124,19 @@ var flip = true,
 
 var videoPlayerCommand = exports.videoPlayerCommand = function videoPlayerCommand() {
   flip = !flip;
+  $animation.attr({
+    "from": flip ? pause : play,
+    "to": flip ? play : pause
+  }).get(0).beginElement();
   if (playPromise !== undefined) {
     playPromise.then(function (_) {
       // Automatic playback started!
       // Show playing UI.
-      $animation.attr({
-        "from": flip ? pause : play,
-        "to": flip ? play : pause
-      }).get(0).beginElement();
-      playPromise;
+      // We can now safely pause video...
+      video.pause();
     }).catch(function (error) {
       // Auto-play was prevented
       // Show paused UI.
-      video.pause();
     });
   }
 };

@@ -7,19 +7,19 @@ let flip = true,
 
 export const videoPlayerCommand = () => {
   flip = !flip;
+  $animation.attr({
+    "from": flip ? pause : play,
+    "to": flip ? play : pause
+  }).get(0).beginElement();
   if (playPromise !== undefined) {
     playPromise.then(_ => {
       // Automatic playback started!
       // Show playing UI.
-      $animation.attr({
-        "from": flip ? pause : play,
-        "to": flip ? play : pause
-      }).get(0).beginElement();
-      playPromise;
+      // We can now safely pause video...
+      video.pause();
     }).catch(error => {
       // Auto-play was prevented
       // Show paused UI.
-      video.pause();
     });
   }
 }
