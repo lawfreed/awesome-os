@@ -138,6 +138,15 @@ var videoPlayerCommand = exports.videoPlayerCommand = function videoPlayerComman
       // Auto-play was prevented
       // Show paused UI.
     });
+  } else {
+    playPromise.then(function (_) {
+      // Automatic playback started!
+      // Show playing UI.
+      playPromise;
+    }).catch(function (error) {
+      // Auto-play was prevented
+      // Show paused UI.
+    });
   }
 };
 

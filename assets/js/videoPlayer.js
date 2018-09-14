@@ -21,5 +21,14 @@ export const videoPlayerCommand = () => {
       // Auto-play was prevented
       // Show paused UI.
     });
+  } else {
+    playPromise.then(_ => {
+      // Automatic playback started!
+      // Show playing UI.
+      playPromise;
+    }).catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+    });
   }
 }
