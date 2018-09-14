@@ -31,9 +31,9 @@
 @mixin buttonHoverReverse {
     background-position: right center; /* change the direction of the change here */
     background: $imageLinearGradient;
-    color: white;
-    @include boxShadow;
+    color: white;    
     &:hover {
+        @include boxShadow;
         transition: 0.5s;
         color: $subtextColour;
         background: $backgroundColour;
