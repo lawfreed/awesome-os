@@ -128,24 +128,12 @@ var videoPlayerCommand = exports.videoPlayerCommand = function videoPlayerComman
     "from": flip ? pause : play,
     "to": flip ? play : pause
   }).get(0).beginElement();
-  if (playPromise !== undefined) {
+  if (video.paused) {
     playPromise.then(function (_) {
       // Automatic playback started!
       // Show playing UI.
       // We can now safely pause video...
       video.pause();
-    }).catch(function (error) {
-      // Auto-play was prevented
-      // Show paused UI.
-    });
-  } else {
-    playPromise.then(function (_) {
-      // Automatic playback started!
-      // Show playing UI.
-      playPromise;
-    }).catch(function (error) {
-      // Auto-play was prevented
-      // Show paused UI.
     });
   }
 };
